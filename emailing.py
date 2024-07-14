@@ -11,6 +11,7 @@ PASSWORD = os.getenv("PASSWORD")
 
 
 def send_email(image_path):
+    print("email")
     email_message = EmailMessage()
     email_message["Subject"] = "New customer showed up!"
     email_message.set_content("Hi 5")
